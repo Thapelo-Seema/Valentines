@@ -32,24 +32,24 @@ export function LoveLetterSection({ onContinue }: LoveLetterSectionProps) {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl text-primary mb-8 text-center">
-            My Dearest Bhabha,
+            Sthandwa Sam',
           </h2>
           
           <div className="space-y-6 font-sans text-foreground/90 leading-relaxed text-base md:text-lg">
             <p>
-              Five years ago, I had no idea that my life was about to change forever. 
-              Then you walked into it, and suddenly everything made sense.
+              Five years ago, I had no idea that my life could be what it is today, 
+              then you walked into it, and suddenly it became brighter and beyond my wildest dreams.
             </p>
             
             <p>
-              You have been my best friend, my confidante, my partner in every adventure, 
-              and the reason I wake up excited for each new day. Your laugh is my favorite sound, 
-              your smile my favorite sight.
+              You have been my best friend, my confidante, my partner in every predicament, and my greatest love. You are the person I want to share all of life’s moments with.
+              You are part of the reasons I wake up excited for each new day. Your laugh is my favorite sound, 
+              your gorgeous face is my favorite sight.
             </p>
             
             <p>
               Through every high and low, you have stood by me. You have seen me at my worst 
-              and loved me anyway. You have celebrated my wins like they were your own. 
+              and loved me anyway.
               You have made me want to be better, not because you asked, but because you inspire me.
             </p>
             

@@ -22,9 +22,15 @@ type Screen =
 
 export default function Home() {
   const [currentScreen, setCurrentScreen] = useState<Screen>("landing")
+  const [wasDifficult, setWasDifficult] = useState(false)
 
   const goToScreen = (screen: Screen) => {
     setCurrentScreen(screen)
+  }
+
+  const handleYes = (difficult: boolean) => {
+    setWasDifficult(difficult)
+    goToScreen("celebration")
   }
 
   return (
@@ -45,10 +51,10 @@ export default function Home() {
         <ValentinesReveal onContinue={() => goToScreen("proposal")} />
       )}
       {currentScreen === "proposal" && (
-        <ProposalSection onYes={() => goToScreen("celebration")} />
+        <ProposalSection onYes={handleYes} />
       )}
       {currentScreen === "celebration" && (
-        <CelebrationSection onComplete={() => goToScreen("final")} />
+        <CelebrationSection onComplete={() => goToScreen("final")} wasDifficult={wasDifficult} />
       )}
       {currentScreen === "final" && (
         <FinalSection />

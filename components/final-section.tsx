@@ -114,16 +114,14 @@ export function FinalSection() {
         }`}
       >
         {/* Animated Envelope */}
-        <div className="relative aspect-video max-w-2xl mx-auto mb-12 perspective-1000">
+        <div className="relative max-w-2xl mx-auto mb-12 perspective-1000">
           {!isEnvelopeOpen ? (
             // Realistic Closed Envelope
             <button
               onClick={handleEnvelopeClick}
-              className="group relative cursor-pointer transform transition-all duration-500 hover:scale-105"
+              className="group relative cursor-pointer transform transition-all duration-500 hover:scale-105 w-full max-w-sm md:max-w-md lg:max-w-lg mx-auto"
               style={{
-                width: '360px',
-                height: '260px',
-                margin: '0 auto'
+                aspectRatio: '360/260'
               }}
             >
               {/* Main Envelope Container */}
@@ -208,8 +206,8 @@ export function FinalSection() {
                 </div>
 
                 {/* Address Area */}
-                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center" style={{ zIndex: 4 }}>
-                  <p className="text-gray-700 text-lg font-serif">Tap to open</p>
+                <div className="absolute bottom-2 sm:bottom-8 left-1/2 transform -translate-x-1/2 text-center" style={{ zIndex: 4 }}>
+                  <p className="text-gray-700 text-sm sm:text-lg font-serif">Tap to open</p>
                 </div>
 
                 {/* Hover glow */}
@@ -221,71 +219,80 @@ export function FinalSection() {
             </button>
           ) : (
             // Opened Invitation
-            <div className="w-full h-full min-h-[500px] bg-gradient-to-br from-gray-900 via-black to-gray-900 border-2 border-primary/40 rounded-lg overflow-hidden shadow-2xl animate-in fade-in zoom-in duration-700">
+            <div className="w-full h-full min-h-[400px] sm:min-h-[500px] bg-gradient-to-br from-gray-900 via-black to-gray-900 border-2 border-primary/40 rounded-lg overflow-hidden shadow-2xl animate-in fade-in zoom-in duration-700">
               <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-transparent to-primary/5"></div>
               
               {/* Decorative Corner Elements */}
-              <div className="absolute top-6 left-6 w-12 h-12 border-l-2 border-t-2 border-primary/60 rounded-tl-lg"></div>
-              <div className="absolute top-6 right-6 w-12 h-12 border-r-2 border-t-2 border-primary/60 rounded-tr-lg"></div>
-              <div className="absolute bottom-6 left-6 w-12 h-12 border-l-2 border-b-2 border-primary/60 rounded-bl-lg"></div>
-              <div className="absolute bottom-6 right-6 w-12 h-12 border-r-2 border-b-2 border-primary/60 rounded-br-lg"></div>
+              <div className="absolute top-4 sm:top-6 left-4 sm:left-6 w-8 sm:w-12 h-8 sm:h-12 border-l-2 border-t-2 border-primary/60 rounded-tl-lg"></div>
+              <div className="absolute top-4 sm:top-6 right-4 sm:right-6 w-8 sm:w-12 h-8 sm:h-12 border-r-2 border-t-2 border-primary/60 rounded-tr-lg"></div>
+              <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 w-8 sm:w-12 h-8 sm:h-12 border-l-2 border-b-2 border-primary/60 rounded-bl-lg"></div>
+              <div className="absolute bottom-4 sm:bottom-6 right-4 sm:right-6 w-8 sm:w-12 h-8 sm:h-12 border-r-2 border-b-2 border-primary/60 rounded-br-lg"></div>
               
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-12 text-center">
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 sm:p-8 md:p-12 text-center">
                 {/* Header */}
-                <div className="mb-8">
-                  <Heart className="w-12 h-12 text-primary fill-primary mx-auto mb-4 animate-pulse" />
-                  <h3 className="font-serif text-3xl md:text-4xl text-gray-100 mb-3">You're Invited</h3>
-                  <p className="text-primary/80 text-lg font-light">to our romantic Valentine's dinner</p>
+                <div className="mb-6 sm:mb-8">
+                  <Heart className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-primary fill-primary mx-auto mb-3 sm:mb-4 animate-pulse" />
+                  <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-gray-100 mb-2 sm:mb-3">You're Invited</h3>
+                  <p className="text-primary/80 text-sm sm:text-lg font-light">to our romantic Valentine's dinner</p>
                 </div>
                 
                 {/* Main Details */}
-                <div className="space-y-6 mb-8">
-                  <div className="bg-gray-800/60 backdrop-blur-sm rounded-lg p-6 border border-primary/30 min-w-[300px]">
-                    <h4 className="font-serif text-2xl md:text-3xl text-primary mb-3">Karvouno</h4>
-                    <div className="space-y-2 text-gray-200">
-                      <p className="text-xl font-medium">February 14th, 2026</p>
-                      <p className="text-lg">18h00</p>
+                <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
+                  <div className="bg-gray-800/60 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-primary/30 min-w-[250px] sm:min-w-[300px]">
+                    <div className="space-y-2 sm:space-y-3 text-gray-200">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
+                        <span className="text-white text-sm sm:text-base font-medium">Venue:</span>
+                        <h4 className="font-serif text-xl sm:text-2xl md:text-3xl text-primary">Karvouno</h4>
+                      </div>
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
+                        <span className="text-white text-sm sm:text-base font-medium">Date:</span>
+                        <p className="text-base sm:text-xl font-medium">February 14th, 2026</p>
+                      </div>
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
+                        <span className="text-white text-sm sm:text-base font-medium">Time:</span>
+                        <p className="text-sm sm:text-lg">18h00</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 
                 {/* Theme Details */}
-                <div className="text-gray-300 text-base">
-                  <p className="mb-3">Dress Code:</p>
-                  <div className="flex items-center justify-center space-x-4">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-4 h-4 rounded-full bg-amber-800 border border-gray-400"></div>
-                      <span className="text-lg">Brown</span>
+                <div className="text-gray-300 text-sm sm:text-base">
+                  <p className="mb-2 sm:mb-3">Dress Code:</p>
+                  <div className="flex items-center justify-center space-x-3 sm:space-x-4">
+                    <div className="flex items-center space-x-1 sm:space-x-2">
+                      <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-amber-800 border border-gray-400"></div>
+                      <span className="text-sm sm:text-lg">Brown</span>
                     </div>
-                    <span className="text-primary text-xl">&</span>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-4 h-4 rounded-full bg-white border border-primary/50"></div>
-                      <span className="text-lg">White</span>
+                    <span className="text-primary text-lg sm:text-xl">&</span>
+                    <div className="flex items-center space-x-1 sm:space-x-2">
+                      <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white border border-primary/50"></div>
+                      <span className="text-sm sm:text-lg">White</span>
                     </div>
                   </div>
                 </div>
                 
                 {/* Decorative Elements */}
-                <div className="absolute top-8 left-8">
-                  <Wine className="w-6 h-6 text-primary/40" />
+                <div className="absolute top-6 sm:top-8 left-6 sm:left-8">
+                  <Wine className="w-4 h-4 sm:w-6 sm:h-6 text-primary/40" />
                 </div>
-                <div className="absolute top-8 right-8">
-                  <UtensilsCrossed className="w-6 h-6 text-primary/40" />
+                <div className="absolute top-6 sm:top-8 right-6 sm:right-8">
+                  <UtensilsCrossed className="w-4 h-4 sm:w-6 sm:h-6 text-primary/40" />
                 </div>
                 
                 {/* Bottom flourish */}
-                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-                  <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent"></div>
+                <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2">
+                  <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent"></div>
                 </div>
               </div>
               
               {/* Subtle animated hearts pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-1/4 left-1/4 animate-ping">
-                  <Heart className="w-3 h-3 text-primary fill-primary" />
+                  <Heart className="w-2 h-2 sm:w-3 sm:h-3 text-primary fill-primary" />
                 </div>
                 <div className="absolute top-3/4 right-1/4 animate-ping animation-delay-1000">
-                  <Heart className="w-3 h-3 text-primary fill-primary" />
+                  <Heart className="w-2 h-2 sm:w-3 sm:h-3 text-primary fill-primary" />
                 </div>
               </div>
             </div>
@@ -302,22 +309,22 @@ export function FinalSection() {
         </p>
 
         {/* Countdown */}
-        <div className="grid grid-cols-4 gap-4 max-w-xl mx-auto mb-16">
-          <div className="bg-card border border-border/50 rounded-lg p-4 md:p-6">
-            <span className="font-serif text-3xl md:text-5xl text-primary">{timeLeft.days}</span>
-            <p className="text-xs md:text-sm text-muted-foreground mt-2">Days</p>
+        <div className="grid grid-cols-4 gap-2 sm:gap-4 max-w-xl mx-auto mb-16">
+          <div className="bg-card border border-border/50 rounded-lg p-3 sm:p-4 md:p-6">
+            <span className="font-serif text-2xl sm:text-3xl md:text-5xl text-primary">{timeLeft.days}</span>
+            <p className="text-xs md:text-sm text-muted-foreground mt-1 sm:mt-2">Days</p>
           </div>
-          <div className="bg-card border border-border/50 rounded-lg p-4 md:p-6">
-            <span className="font-serif text-3xl md:text-5xl text-primary">{timeLeft.hours}</span>
-            <p className="text-xs md:text-sm text-muted-foreground mt-2">Hours</p>
+          <div className="bg-card border border-border/50 rounded-lg p-3 sm:p-4 md:p-6">
+            <span className="font-serif text-2xl sm:text-3xl md:text-5xl text-primary">{timeLeft.hours}</span>
+            <p className="text-xs md:text-sm text-muted-foreground mt-1 sm:mt-2">Hours</p>
           </div>
-          <div className="bg-card border border-border/50 rounded-lg p-4 md:p-6">
-            <span className="font-serif text-3xl md:text-5xl text-primary">{timeLeft.minutes}</span>
-            <p className="text-xs md:text-sm text-muted-foreground mt-2">Minutes</p>
+          <div className="bg-card border border-border/50 rounded-lg p-3 sm:p-4 md:p-6">
+            <span className="font-serif text-2xl sm:text-3xl md:text-5xl text-primary">{timeLeft.minutes}</span>
+            <p className="text-xs md:text-sm text-muted-foreground mt-1 sm:mt-2">Minutes</p>
           </div>
-          <div className="bg-card border border-border/50 rounded-lg p-4 md:p-6">
-            <span className="font-serif text-3xl md:text-5xl text-primary">{timeLeft.seconds}</span>
-            <p className="text-xs md:text-sm text-muted-foreground mt-2">Seconds</p>
+          <div className="bg-card border border-border/50 rounded-lg p-3 sm:p-4 md:p-6">
+            <span className="font-serif text-2xl sm:text-3xl md:text-5xl text-primary">{timeLeft.seconds}</span>
+            <p className="text-xs md:text-sm text-muted-foreground mt-1 sm:mt-2">Seconds</p>
           </div>
         </div>
 
@@ -327,7 +334,7 @@ export function FinalSection() {
             I love you, <span className="text-primary">Bhabha</span>
           </p>
           <p className="font-sans text-muted-foreground">
-            Forever and always
+            To the end of the earth and afar, and beyond afar.
           </p>
         </div>
       </div>

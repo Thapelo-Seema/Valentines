@@ -5,6 +5,7 @@ import { Heart } from "lucide-react"
 
 interface CelebrationSectionProps {
   onComplete: () => void
+  wasDifficult?: boolean
 }
 
 interface Particle {
@@ -19,7 +20,7 @@ interface Particle {
   type: "confetti" | "heart"
 }
 
-export function CelebrationSection({ onComplete }: CelebrationSectionProps) {
+export function CelebrationSection({ onComplete, wasDifficult = false }: CelebrationSectionProps) {
   const [particles, setParticles] = useState<Particle[]>([])
   const [showMessage, setShowMessage] = useState(false)
   const [showDetails, setShowDetails] = useState(false)
@@ -108,6 +109,11 @@ export function CelebrationSection({ onComplete }: CelebrationSectionProps) {
           
           <h2 className="font-serif text-4xl md:text-6xl text-primary mb-4">
             She said YES!
+            {wasDifficult && (
+              <div className="text-base md:text-lg text-muted-foreground/70 mt-2 font-sans">
+                (Why did you have to be so difficult)
+              </div>
+            )}
           </h2>
           
           <p className="font-serif text-2xl md:text-3xl text-foreground">

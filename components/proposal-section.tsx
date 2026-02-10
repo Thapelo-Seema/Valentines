@@ -6,7 +6,7 @@ import { FloatingHearts } from "@/components/floating-hearts"
 import { Heart } from "lucide-react"
 
 interface ProposalSectionProps {
-  onYes: () => void
+  onYes: (wasDifficult: boolean) => void
 }
 
 const noResponses = [
@@ -14,7 +14,7 @@ const noResponses = [
   "Unfortunately, that is not an option.",
   "Are you sure? Let me ask again...",
   "Hmm, that button seems broken. Try the other one!",
-  "Nice try! But no is not in my vocabulary.",
+  "Nice try! I said no is not an option.",
   "The 'No' button is just for decoration.",
   "I think you meant to click 'Yes'!",
   "Error 404: 'No' not found.",
@@ -25,6 +25,10 @@ export function ProposalSection({ onYes }: ProposalSectionProps) {
   const [showButtons, setShowButtons] = useState(false)
   const [noMessage, setNoMessage] = useState<string | null>(null)
   const [noCount, setNoCount] = useState(0)
+  const [buttonsDisabled, setButtonsDisabled] = useState(false)
+  const [showNoButton, setShowNoButton] = useState(true)
+
+  const maxNoResponses = noResponses.length
 
   useEffect(() => {
     const contentTimer = setTimeout(() => setShowContent(true), 500)
@@ -36,9 +40,25 @@ export function ProposalSection({ onYes }: ProposalSectionProps) {
   }, [])
 
   const handleNo = () => {
-    setNoMessage(noResponses[noCount % noResponses.length])
-    setNoCount(prev => prev + 1)
-    setTimeout(() => setNoMessage(null), 2500)
+    const currentIndex = noCount % noResponses.length
+    setNoMessage(noResponses[currentIndex])
+    const newCount = noCount + 1
+    setNoCount(newCount)
+    setButtonsDisabled(true)
+    
+    setTimeout(() => {
+      setNoMessage(null)
+      setButtonsDisabled(false)
+      
+      // Hide No button after all responses are exhausted
+      if (newCount >= maxNoResponses) {
+        setShowNoButton(false)
+      }
+    }, 2500)
+  }
+
+  const handleYes = () => {
+    onYes(noCount >= maxNoResponses)
   }
 
   return (
@@ -75,19 +95,35 @@ export function ProposalSection({ onYes }: ProposalSectionProps) {
           }`}
         >
           <Button
-            onClick={onYes}
-            className="px-12 py-6 text-lg font-serif bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-500 hover:scale-105"
+            onClick={handleYes}
+            disabled={buttonsDisabled}
+            className={`px-12 py-6 text-lg font-serif ${
+              buttonsDisabled 
+                ? 'bg-primary/50 text-primary-foreground/50 cursor-not-allowed hover:bg-primary/50 hover:scale-100' 
+                : 'bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105'
+            } transition-all duration-500`}
           >
             Yes
           </Button>
           
-          <Button
-            onClick={handleNo}
-            variant="outline"
-            className="px-12 py-6 text-lg font-serif border-muted-foreground/30 text-muted-foreground hover:bg-muted/20 transition-all duration-500 bg-transparent"
-          >
-            No
-          </Button>
+          {showNoButton ? (
+            <Button
+              onClick={handleNo}
+              disabled={buttonsDisabled}
+              variant="outline"
+              className={`px-12 py-6 text-lg font-serif bg-transparent ${
+                buttonsDisabled
+                  ? 'border-muted-foreground/20 text-muted-foreground/70 cursor-not-allowed hover:bg-transparent hover:text-muted-foreground/70 hover:border-muted-foreground/20'
+                  : 'border-muted-foreground/30 text-muted-foreground hover:bg-muted/20'
+              } transition-all duration-500`}
+            >
+              No
+            </Button>
+          ) : (
+            <div className="px-12 py-6 text-lg font-serif text-muted-foreground/70 italic">
+              Only one option left
+            </div>
+          )}
         </div>
       </div>
     </section>
