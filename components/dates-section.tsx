@@ -223,7 +223,7 @@ export function DatesSection({ onContinue }: DatesSectionProps) {
                 className={`flex-shrink-0 p-3 rounded-lg border transition-all duration-300 ${
                   currentPage === 0 
                     ? 'border-border/30 text-muted-foreground/30 cursor-not-allowed' 
-                    : 'border-primary/40 text-primary hover:bg-primary/10 hover:border-primary'
+                    : 'border-primary/40 text-white hover:bg-primary/10 hover:border-primary'
                 }`}
               >
                 <ChevronLeft className="w-6 h-6" />
@@ -267,7 +267,7 @@ export function DatesSection({ onContinue }: DatesSectionProps) {
                 className={`flex-shrink-0 p-3 rounded-lg border transition-all duration-300 ${
                   currentPage === totalPages - 1
                     ? 'border-border/30 text-muted-foreground/30 cursor-not-allowed' 
-                    : 'border-primary/40 text-primary hover:bg-primary/10 hover:border-primary'
+                    : 'border-primary/40 text-white hover:bg-primary/10 hover:border-primary'
                 }`}
               >
                 <ChevronRight className="w-6 h-6" />
@@ -291,7 +291,7 @@ export function DatesSection({ onContinue }: DatesSectionProps) {
           <Button
             onClick={onContinue}
             variant="outline"
-            className="px-10 py-6 text-lg font-serif border-primary/40 text-foreground hover:bg-primary/10 hover:border-primary transition-all duration-500 bg-transparent"
+            className="px-10 py-6 text-lg font-serif border-primary/40 text-white hover:bg-primary/10 hover:border-primary transition-all duration-500 bg-transparent"
           >
             Continue
           </Button>
@@ -310,7 +310,7 @@ export function DatesSection({ onContinue }: DatesSectionProps) {
           >
             <button
               onClick={() => setSelectedMemory(null)}
-              className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
+              className="absolute top-4 right-4 text-white hover:text-white/80 transition-colors"
             >
               <X className="w-6 h-6" />
             </button>

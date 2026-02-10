@@ -61,7 +61,7 @@ export function ValentinesReveal({ onContinue }: ValentinesRevealProps) {
           <Button
             onClick={onContinue}
             variant="outline"
-            className="px-10 py-6 text-lg font-serif border-primary/40 text-foreground hover:bg-primary/10 hover:border-primary transition-all duration-500 bg-transparent"
+            className="px-10 py-6 text-lg font-serif border-primary/40 text-white hover:bg-primary/10 hover:border-primary transition-all duration-500 bg-transparent"
           >
             Continue
           </Button>

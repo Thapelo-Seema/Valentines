@@ -99,8 +99,8 @@ export function ProposalSection({ onYes }: ProposalSectionProps) {
             disabled={buttonsDisabled}
             className={`px-12 py-6 text-lg font-serif ${
               buttonsDisabled 
-                ? 'bg-primary/50 text-primary-foreground/50 cursor-not-allowed hover:bg-primary/50 hover:scale-100' 
-                : 'bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105'
+                ? 'bg-primary/50 text-white/50 cursor-not-allowed hover:bg-primary/50 hover:scale-100' 
+                : 'bg-primary text-white hover:bg-primary/90 hover:scale-105'
             } transition-all duration-500`}
           >
             Yes
@@ -113,8 +113,8 @@ export function ProposalSection({ onYes }: ProposalSectionProps) {
               variant="outline"
               className={`px-12 py-6 text-lg font-serif bg-transparent ${
                 buttonsDisabled
-                  ? 'border-muted-foreground/20 text-muted-foreground/70 cursor-not-allowed hover:bg-transparent hover:text-muted-foreground/70 hover:border-muted-foreground/20'
-                  : 'border-muted-foreground/30 text-muted-foreground hover:bg-muted/20'
+                  ? 'border-muted-foreground/20 text-white/70 cursor-not-allowed hover:bg-transparent hover:text-white/70 hover:border-muted-foreground/20'
+                  : 'border-muted-foreground/30 text-white hover:bg-muted/20'
               } transition-all duration-500`}
             >
               No
