@@ -15,10 +15,10 @@ const inter = Inter({
   variable: '--font-sans'
 })
 
-export const metadata: Metadata = {
-  title: 'A Letter I Didn\'t Know How To Say Out Loud',
-  description: 'A private romantic experience',
-}
+// export const metadata: Metadata = {
+//   title: 'A Letter I Didn\'t Know How To Say Out Loud',
+//   description: 'A private romantic experience',
+// }
 
 export const viewport = {
   width: 'device-width',
