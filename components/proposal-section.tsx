@@ -74,7 +74,7 @@ export function ProposalSection({ onYes }: ProposalSectionProps) {
           <Heart className="w-16 h-16 md:w-24 md:h-24 text-primary fill-primary mx-auto mb-8 animate-pulse" />
           
           <h2 className="font-serif text-4xl md:text-6xl text-foreground mb-4">
-            So, <span className="text-primary">Bhabha</span>...
+            So, <span className="text-primary">Puki</span>...
           </h2>
           
           <p className="font-serif text-3xl md:text-5xl text-foreground leading-relaxed">

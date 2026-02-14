@@ -44,12 +44,12 @@ export function ValentinesReveal({ onContinue }: ValentinesRevealProps) {
           }`}
         >
           <p className="font-serif text-3xl md:text-5xl text-primary leading-relaxed">
-            We have never spent{" "}
+            I have never asked you to be my{" "}
             <span className="inline-flex items-center gap-2">
-              Valentine&apos;s Day
+              Valentine
               <Heart className="w-8 h-8 md:w-12 md:h-12 fill-primary text-primary animate-pulse" />
             </span>
-            {" "}together
+            
           </p>
         </div>
 

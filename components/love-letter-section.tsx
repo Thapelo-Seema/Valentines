@@ -32,34 +32,43 @@ export function LoveLetterSection({ onContinue }: LoveLetterSectionProps) {
           }`}
         >
           <h2 className="font-serif text-3xl md:text-4xl text-primary mb-8 text-center">
-            Sthandwa Sam',
+            My dearest Motumiseng,
           </h2>
           
           <div className="space-y-6 font-sans text-foreground/90 leading-relaxed text-base md:text-lg">
             <p>
-              Five years ago, I had no idea that my life could be what it is today, 
-              then you walked into it, and suddenly it became brighter and beyond my wildest dreams.
+              If someone had told us back then — two varsity kids, young, reckless, just living for the moment — that we would be here today, almost five years deep into a love that has been tested, stretched, and strengthened… I don’t think we would have believed them.
             </p>
             
             <p>
-              You have been my best friend, my confidante, my partner in every predicament, and my greatest love. You are the person I want to share all of life’s moments with.
-              You are part of the reasons I wake up excited for each new day. Your laugh is my favorite sound, 
-              your gorgeous face is my favorite sight.
+              What started as something light and unlikely turned into the most beautiful chapter of my life.
             </p>
             
             <p>
-              Through every high and low, you have stood by me. You have seen me at my worst 
-              and loved me anyway.
-              You have made me want to be better, not because you asked, but because you inspire me.
+              We’ve been failing forward together — learning, stumbling, growing, forgiving, choosing each other over and over again. And through it all, our love has conquered more than I ever imagined it would. Distance. Challenges. Fear. Growth. We’ve faced them hand in hand.
             </p>
             
             <p>
-              These five years have been the best of my life, and I cannot imagine a future 
-              without you in it. Every memory we have created together is a treasure I hold close to my heart.
+              I still think about that 1500km drive down to Cape Town. The road felt long, but being with you made it feel like home. I wouldn’t have taken that journey with anyone else. That trip wasn’t just about the destination — it was about us. About choosing adventure together. About knowing that as long as you were beside me, everything would be okay.
+            </p>
+            <p> 
+              Thank you for giving me the greatest gift of my life — our beautiful son. Thank you for being such a loving, patient, incredible mother to Oshi. Watching you love him the way you do makes me fall for you even more. You carry so much, you give so much, and you do it with strength and grace.
+            </p>
+            <p>
+              I’m sorry that I don’t always acknowledge the effort you put in. I know there are moments when I fall short in showing appreciation. But please know this: I see you. I see your sacrifices. I see your love. I see your exhaustion. I see your strength. And I appreciate you more than my words sometimes allow me to express.
+            </p>
+            <p> 
+              I can’t wait for the day when you, me, and Oshi are reunited again under one roof. I can’t wait for our version of happily ever after — not the perfect fairytale kind, but the real one. The one built on growth, resilience, laughter, forgiveness, and deep, intentional love.
+            </p>
+            <p> 
+              This is our love story. And it’s still being written.
+            </p>
+            <p> 
+              I love you, Motumiseng. Always have. Always will.
             </p>
             
             <p className="text-primary font-serif text-xl text-center pt-4">
-              Let me take you on a journey through some of our best moments...
+              Let me take you on a journey through some of our recent memories...
             </p>
           </div>
 

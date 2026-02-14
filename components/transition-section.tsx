@@ -32,7 +32,7 @@ export function TransitionSection({ onContinue }: TransitionSectionProps) {
           }`}
         >
           We have had so many{" "}
-          <span className="text-primary">amazing dates</span>
+          <span className="text-primary">amazing memories</span>
           {" "}over these five years...
         </p>
         

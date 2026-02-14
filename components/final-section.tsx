@@ -233,7 +233,7 @@ export function FinalSection() {
                 <div className="mb-6 sm:mb-8">
                   <Heart className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-primary fill-primary mx-auto mb-3 sm:mb-4 animate-pulse" />
                   <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-gray-100 mb-2 sm:mb-3">You're Invited</h3>
-                  <p className="text-primary/80 text-sm sm:text-lg font-light">to our romantic Valentine's dinner</p>
+                  <p className="text-primary/80 text-sm sm:text-lg font-light">to our Valentine's shutdown</p>
                 </div>
                 
                 {/* Main Details */}
@@ -242,15 +242,15 @@ export function FinalSection() {
                     <div className="space-y-2 sm:space-y-3 text-gray-200">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
                         <span className="text-white text-sm sm:text-base font-medium">Venue:</span>
-                        <h4 className="font-serif text-xl sm:text-2xl md:text-3xl text-primary">Karvouno</h4>
+                        <h4 className="font-serif text-xl sm:text-2xl md:text-3xl text-primary">Table Mountain</h4>
                       </div>
                       <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
                         <span className="text-white text-sm sm:text-base font-medium">Date:</span>
-                        <p className="text-base sm:text-xl font-medium">February 14th, 2026</p>
+                        <p className="text-base sm:text-xl font-medium">February 15th, 2026</p>
                       </div>
                       <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
                         <span className="text-white text-sm sm:text-base font-medium">Time:</span>
-                        <p className="text-sm sm:text-lg">18h00</p>
+                        <p className="text-sm sm:text-lg">10h00</p>
                       </div>
                     </div>
                   </div>
@@ -262,12 +262,12 @@ export function FinalSection() {
                   <div className="flex items-center justify-center space-x-3 sm:space-x-4">
                     <div className="flex items-center space-x-1 sm:space-x-2">
                       <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-amber-800 border border-gray-400"></div>
-                      <span className="text-sm sm:text-lg">Brown</span>
+                      <span className="text-sm sm:text-lg">White</span>
                     </div>
                     <span className="text-primary text-lg sm:text-xl">&</span>
                     <div className="flex items-center space-x-1 sm:space-x-2">
                       <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white border border-primary/50"></div>
-                      <span className="text-sm sm:text-lg">White</span>
+                      <span className="text-sm sm:text-lg">a touch of Black</span>
                     </div>
                   </div>
                 </div>
@@ -305,7 +305,7 @@ export function FinalSection() {
         </h2>
         
         <p className="font-sans text-muted-foreground mb-12">
-          February 14th, 2026
+          February 15th, 2026
         </p>
 
         {/* Countdown */}
@@ -331,7 +331,7 @@ export function FinalSection() {
         <div className="space-y-4">
           <Heart className="w-8 h-8 text-primary fill-primary mx-auto animate-pulse" />
           <p className="font-serif text-xl md:text-2xl text-foreground">
-            I love you, <span className="text-primary">Bhabha</span>
+            I love you, <span className="text-primary">Puki</span>
           </p>
           <p className="font-sans text-muted-foreground">
             To the end of the earth and afar, and beyond afar.

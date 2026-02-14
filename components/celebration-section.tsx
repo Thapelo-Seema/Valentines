@@ -127,8 +127,8 @@ export function CelebrationSection({ onComplete, wasDifficult = false }: Celebra
           }`}
         >
           <h3 className="font-serif text-2xl text-primary mb-4">Save the Date</h3>
-          <p className="font-sans text-foreground text-lg mb-2">February 14th, 2026</p>
-          <p className="font-sans text-muted-foreground">Our first Valentine&apos;s Day together</p>
+          <p className="font-sans text-foreground text-lg mb-2">February 15th, 2026</p>
+          <p className="font-sans text-muted-foreground">Our Second Valentine&apos;s Day together in Cape Town</p>
         </div>
       </div>
 

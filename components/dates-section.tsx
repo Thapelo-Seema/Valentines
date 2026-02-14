@@ -18,83 +18,52 @@ interface DateMemory {
 const memories: DateMemory[] = [
   {
     id: 1,
-    title: "Our First Date",
-    year: "2020",
-    story: "One of the best days of my life! I was a bit nervous, also we had a fight earlier that day and I was worried it would affect our date. But as soon as I saw you walk towards me lapha e BP garage esbhedlela, all my worries melted away. We had such a great time talking, laughing, and just being together. It was the perfect start to our journey.",
-    placeholder: "First Date Photo",
-    image: "/IMG_9218.jpg"
+    title: "Our Go Karting Day",
+    year: "2024",
+    story: "This was so much fun, we both had our competitive spirits on that day. I remember you were so excited to beat me, and unfortunately I wiped the floor with your ass lol!",
+    placeholder: "Trip Photo",
+    image: "/go_karting.jpg"
   },
   {
     id: 2,
-    title: "Our First Movie Date",
-    year: "2024",
-    story: "We went to watch Fly Me To The Moon, and I remember how excited we were. The movie was great, but what made it special was sharing that experience with you. We laughed, we got emo during the sad scene (at least I did lol), and we held hands throughout the whole thing. It was a simple date, but it meant so much to me.",
-    placeholder: "Trip Photo",
-    image: "/IMG_7314.jpg"
+    title: "Strand Beach",
+    year: "2025",
+    story: "This is our outing to strand beach, it was actually my first time coming to Cape Town on a work trip. Everything was going great until we had to run the streets with cops, looking for my phone lol! It was a terrible experience but having you there made it so much more bearable.",
+    placeholder: "Strand Beach Photo",
+    image: "/strand.jpg"
   },
+  
   {
     id: 3,
-    title: "Nokukhanya's Birthday Dinner",
-    year: "2023",
-    story: "One of the most awkward nights of my life, but also one of the most memorable. I remember receiving a call from you asking if I wanted to come to your sister's birthday dinner, and boy I was so nervous. Excited under the hood, but on the outside I was shitting my pants. I remember calling Gugu and asking her what to do and stuff, and she said, 'This girl is sure about you. If she wasn't she wouldn't have even bothered to invite you. Dont overthink it. Just be yourself and have fun'. She wired me money after coz I was broke lol. When I got in Tshepiso's car, I realized there was no going back and I started sweating. But after a while, I started to relax and enjoy myself. Your family was very nice and welcoming. It was a wonderful night full of laughter, good food, and great company, and shots, lol. I'm so glad I got to be a part of it.",
-    placeholder: "Birthday Photo",
-    image: "/IMG_2318.jpg"
+    title: "Wine Tasting",
+    year: "2025",
+    story: "This was our first wine tasting experience together, one the many firsts we've shared. We had fun but I don't miss the experience with that Uber guy who kept getting lost",
+    placeholder: "Wine Tasting Photo",
+    image: "/wine_tasting.JPG"
   },
   {
     id: 4,
-    title: "Our First Vacation Dinner Date",
+    title: "Lewatles first concert",
     year: "2025",
-    story: "That dinner was one of the highlights of our vacation. The atmosphere was so romantic. We had such a great time talking and laughing with Thabiso and Khathu. I hate that they rushed us though. But it was a great evening.",
-    placeholder: "Anniversary Photo",
-    image: "/IMG_6662.jpg"
+    story: "I'm so glad you were around to share the experience of seeing our sons first concert. It was such a special moment for both of us and, yes, we were the biggest family as always.",
+    placeholder: "Lewatle Concert Photo",
+    image: "/lewatle_concert.JPG"
   },
   {
     id: 5,
-    title: "Your Graduation Day",
+    title: "Year end function",
     year: "2025",
-    story: "I was so proud of you on this day (I always am proud of you btw). Seeing you walk across that stage to receive your DEGREE was such a special moment. It was a testament to your hard work and resilience throughout the tribulations you encountered, and being away from the love of your life for so many years. I felt honored to be there to witness it. We celebrated with a nice dinner at Spur afterwards. Thank you for letting me be a part of such an important milestone in your life.",
-    placeholder: "Recent Photo",
-    image: "/IMG_0704.jpg"
+    story: "You came to my year end function and I was so happy to have you there to support me. ",
+    placeholder: "Year End Function Photo",
+    image: "/year_end.JPG"
   },
   {
     id: 6,
-    title: "Our Four Year Anniversary",
-    year: "2024",
-    story: "Our 4th anniversary was such a special day. We had a romantic picnic, and it was the perfect way to celebrate our love. We reminisced about all the amazing memories we've shared over the years, we talked about our hopes and dreams for the future, and did some painting. Going through the scrapbook was my highlight. I remember crying a bit while I was reading it. Thats the best gift I've ever received in my life. It was a very beautiful day that reminded me of how blessed I am to have you in my life.",
-    placeholder: "Meeting Photo",
-    image: "/IMG_1686.jpg"
-  },
-  {
-    id: 7,
-    title: "Our First Gold Reef City Date",
-    year: "2025",
-    story: "One of the least enjoyable dates we've had, but also a very memorable one. I remember how excited we were, and I ruined it by being sick lol. We had a fight at the restaurant and I felt so bad for ruining your birthday. But the day was saved by the surprise celebration I planned with your sister. That was really a special moment, and I'm glad I got to share it with you. Despite the hurdles, we had a great ending to the day and had such an amazing time together with your family and made some unforgettable memories.",
-    placeholder: "Trip Photo",
-    image: "/IMG_6036.jpg"
-  },
-  {
-    id: 8,
-    title: "Our Fifth Year Anniversary",
-    year: "2025",
-    story: "How we made it to this milestone in our relationship is a testament of God's grace and mercy, and the power of our love. A very challenging year in our relationship, days were so dark that it felt like the moon wasnt shining behind the clouds, but miraculously we made it through. I thank God for restoring our love and bringing us closer than ever. Another year of growing together, laughing together, and loving each other more deeply. Every day with you is a gift I never take for granted. Here is to many more years of us.",
-    placeholder: "Anniversary Photo",
-    image: "/IMG_5547.jpg"
-  },
-  {
-    id: 9,
-    title: "Our Cozy Nights In",
-    year: "2025",
-    story: "Some of my favourite memories are the nights we've spent together. Going to sleep next to you has been an experience I cant put in words. Each time feels like the first. Oh how I miss those days zomkipito (crying). I still have flashbacks of the banging sex we had before taking this picture. I miss those nights so much. I miss you so much.",
-    placeholder: "Cozy Night Photo",
-    image: "/IMG_3867 (1).jpg"
-  },
-  {
-    id: 10,
-    title: "Us This Year",
+    title: "Camping",
     year: "2026",
-    story: "Another year of growing together, laughing together, and loving each other more deeply. Every day with you is a gift I never take for granted. Here is to many more years of us.",
-    placeholder: "Recent Photo",
-    image: "/IMG_8859 (1).jpg"
+    story: "This is how started off the year together with our son. It was such a special moment for us, and I remember how much fun we had camping together. We made some unforgettable memories that day, I don't want to spill the beans but you didn't have to pull Oshi's foot lol",
+    placeholder: "Camping Photo",
+    image: "/camping.JPG"
   }
 ]
 
@@ -148,7 +117,7 @@ export function DatesSection({ onContinue }: DatesSectionProps) {
             showContent ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          Our <span className="text-primary">Some of Our Best Dates</span>
+          Our <span className="text-primary">Some of Our Recent Memories</span>
         </h2>
         <p 
           className={`text-center text-muted-foreground mb-12 font-sans transition-all duration-1000 delay-200 ${
@@ -157,7 +126,7 @@ export function DatesSection({ onContinue }: DatesSectionProps) {
         >
           In no particular order, just some of the moments that made our journey special. Each one holds a story that I cherish deeply.
           <br/>
-          And yes, I know there are some dates missing.
+          
         </p>
         
         <p 

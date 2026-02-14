@@ -31,7 +31,7 @@ export function LandingSection({ onContinue }: LandingSectionProps) {
             showContent ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Hey <span className="text-primary">Bhabha</span>
+          Hey <span className="text-primary">Puki</span>
         </h1>
         
         <p 
